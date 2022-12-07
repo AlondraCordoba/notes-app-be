@@ -22,3 +22,30 @@ let tempData; export default tempData = [
         }
       ]
     },
+    {
+      id: 2,
+      name: 'Shopping List',
+      color: '#8022D9',
+      todos: [
+        {
+          title: 'Buy Milk',
+          complete: false
+        },
+        {
+          title: 'Buy Chocolate',
+          completed: true
+        }
+      ]
+    },
+    {
+      id: 3,
+      name: 'School Work',
+      color: '#A7CBD9',
+      todos: [
+        {
+          title: 'Geography 12 marker',
+          completed: false
+        }
+      ]
+    }
+  ]
