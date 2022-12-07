@@ -10,5 +10,29 @@ export default class AddListModel extends React.Component {
     name: "",
     color: this.backgroundColors[0]
   }
+  
+  createTodo = () => {
+    const {name, color} = this.state;
+    const list = {name, color};
+    this.props.addList(list)
+   
+    this.setState({name : ""})
+    this.props.closeModal();
+  
+  }
+  renderColors()
+  {
+      return this.backgroundColors.map(color => {
+        return (
+          <TouchableOpacity
+          key={color}
+          style= {[styles.colorSelect, {backgroundColor: color}]}
+          onPress= {() => this.setState({color})}
+          />
+        );
+      });
+    
+  }
 
 }
+
