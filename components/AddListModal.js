@@ -61,7 +61,6 @@ export default class AddListModel extends React.Component {
       </KeyboardAvoidingView>
     )
   }
-  
 }
 
     const styles = StyleSheet.create({
