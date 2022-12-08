@@ -66,3 +66,62 @@ export class TodoModal extends React.Component {
     )
   }
 }
+
+const styles = StyleSheet.create ({
+    container:{
+        flex: 1 ,
+        justifyContent: "center",
+        alignContent: "center"
+    
+    },
+    section: {
+        flex: 1,
+        alignSelf: "stretch"
+    },
+    header: {
+        justifyContent: 'flex-end',
+        marginLeft: 64,
+        borderBottomWidth: 3
+    },
+    title:{
+        fontSize:30,
+        fontWeight: "800",
+        color: Colors.black
+    },
+    taskCount: {
+        marginTop: 4,
+        marginBottom: 16,
+        color:Colors.gray,
+        fontWeight: "1000"
+    },
+    footer:{
+        paddingHorizontal: 32,
+        flexDirection: "row",
+        alignItems: "center"
+    },
+    input: {
+        flex: 1,
+        height:48,
+        borderWidth: StyleSheet.hairlineWidth,
+        borderRadius: 6,
+        marginHorizontal: 8,
+        paddingHorizontal: 8 
+    },
+    addTodo:{
+        borderRadius: 4,
+        padding: 16,
+        alignItems: "center",
+        justifyContent:"center"
+        
+    },
+    todoContainer: {
+        paddingVertical: 16,
+        flexDirection: 'row',
+        alignItems: 'center'
+    },
+    todo : {
+        color: Colors.black,
+        fontWeight: "700",
+        fontSize: 16
+    }
+})
